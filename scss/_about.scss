@@ -1,0 +1,69 @@
+@import "mixin";
+
+
+.intro {
+    margin-bottom: 110px;
+
+    &__title {
+        @include title;
+        position: relative;
+
+        & span {
+            font-weight: 300;
+        }
+
+        &::after {
+            content: url('/img/right.svg');
+            position: absolute;
+            top: 34px;
+            right: 100px;
+            cursor: pointer;
+        }
+    }
+
+}
+
+.about {
+    position: relative;
+
+    .vector-5 {
+        position: absolute;
+        top: -120px;
+        left: -120px;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .vector-6 {
+        position: absolute;
+        top: 120px;
+        width: 100%;
+        z-index: -1;
+    }
+
+
+    &__img {
+        & img {
+            border-radius: 240px 100px 240px 100px;
+            width: 520px;
+            height: 550px;
+        }
+    }
+
+    &__title {
+        @include title;
+
+        & span {
+            font-weight: 300;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        margin: 44px 0;
+    }
+
+    &__button {
+        @include btn-purple;
+    }
+}
