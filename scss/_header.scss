@@ -73,13 +73,11 @@
     margin-bottom: 90px;
 
     &__item {
-        flex: 1;
+        flex: auto;
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 20px; // отступы между иконкой, названием и текстом
-        padding: 0 26px;
+        gap: 20px;
     }
 
     &__item:not(:last-child) {

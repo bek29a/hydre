@@ -73,13 +73,11 @@
   margin-bottom: 90px;
 }
 .info__item {
-  flex: 1;
+  flex: auto;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  padding: 0 26px;
 }
 .info__item:not(:last-child) {
   border-right: 2px solid rgba(255, 255, 255, 0.2);
