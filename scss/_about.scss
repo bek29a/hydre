@@ -67,3 +67,42 @@
         @include btn-purple;
     }
 }
+
+// Extra large---------
+@media (max-width: 1280px) { 	
+    .intro {
+
+        gap: 70px;
+        margin-bottom: 70px;
+
+        &__title {
+            font-size: 26px;
+            &::after {
+                top: 7px;
+                right: 50px;
+            }
+        }
+
+        &__text {
+            font-size: 14px;
+            padding-right: 10px;
+        }
+    }
+
+    .about {
+
+        &__img img {
+            width: 420px;
+            height: 450px;
+        }
+
+        &__title {
+            font-size: 26px;
+        }
+
+        &__text {
+            font-size: 14px;
+            padding-right: 10px;
+        }
+    }
+}

@@ -46,6 +46,7 @@
 }
 
 .content {
+    position: relative;
 
     &__title span {
         @include grad-text;
@@ -53,6 +54,8 @@
 
     &__btn {
         @include btn-purple;
+        position: absolute;
+        z-index: 5;
     }
 
     &__img {
@@ -78,6 +81,11 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
+
+        & img {
+            width: 40px;
+            height: 44px;
+        }
     }
 
     &__item:not(:last-child) {
@@ -85,7 +93,7 @@
     }
 
     &__name {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 700;
     }
 
@@ -141,10 +149,11 @@
     }
 }
 
+// Extra large ≥992px---------
 @media (max-width: 1280px) {
 
     .hero {
-        justify-content: space-evenly;
+        justify-content: space-around;
         padding: 60px 0;
     }
     
@@ -167,6 +176,11 @@
 
     .content {
 
+        &__img {
+            width: 400px;
+            height: 340px;
+        }
+
         &__title {
             font-size: 32px;
         }
@@ -187,8 +201,24 @@
     }
 
     .info {
+
         &__name {
-            font-size: 16px;
+            font-size: 18px;
+        }
+
+        &__adress {
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+
+        justify-content: space-around;
+
+        & ul {
+            display: none;
         }
     }
 }
