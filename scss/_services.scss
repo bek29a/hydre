@@ -1,0 +1,73 @@
+@use "mixin";
+
+section {
+    overflow: hidden;
+}
+
+.services {
+    margin-bottom: 80px;
+}
+
+.card {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 12px;
+    position: relative;
+    
+    .vector-7 {
+        position: absolute;
+        top: 22px;
+        left: -50px;
+        width: 1442px;
+        z-index: -1;
+    }
+    &__item {
+        width: 300px;
+        height: 510px;
+        background: radial-gradient(#433D60, #211E2E);
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &__image {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: #0E0E0E52 16px solid;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        border-bottom: #C0B7E854 1px solid;
+        padding-bottom: 10px;
+    }
+
+    &__text {
+        width: 260px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #cdcdcf;
+        line-height: 20px;
+
+    }
+
+    &__button {
+        @include mixin.btn-purple;
+        color: white;
+    }
+}

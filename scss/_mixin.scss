@@ -1,0 +1,26 @@
+
+$grad-color: linear-gradient(to right, #8176AF, #C0B7E8); 
+
+@mixin btn-purple {
+    padding: 17px 38px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: $grad-color;
+    border-radius: 40px;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+}
+
+@mixin grad-text {
+    color: transparent; 
+    background-clip: text;
+    background-image: $grad-color;
+}
+
+@mixin title {
+    font-size: 36px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
