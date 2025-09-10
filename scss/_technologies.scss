@@ -55,3 +55,11 @@
         height: 100%;
     }
 }
+
+@media (max-width: 520px) {
+    .technologies {
+        &__title {
+            font-size: 26px;
+        }
+    }
+}
